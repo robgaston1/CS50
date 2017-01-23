@@ -1,0 +1,32 @@
+1)What's stdint.io?
+a header that declares sets of integer types that have a set size
+
+2)What's the point of using uint8_t, uint32_t, int32_t, and uint16_t?
+these relate the size of BYTE, WORD, LONG to specific native variables
+
+3)How many bytes is a BYTE, WORD, LONG and WORD? BYTE: 1, DWORD 4, LONG:4, WORD: 2
+
+4)What (ASCII, HEX, or DEC) must the first two bytes of any BMP file be?
+characters (in ascii) "B" and "M"
+
+5)What's the difference between bfsize and bisize?
+bisize is the header file size. bfsize is the entire file size
+
+6)What does it mean if biHeight is negative?
+means the map is top down and starts in the upper left corner. Otherwise if positive, the map starts in the lower left and is bottom up
+
+7)What field in BITMAPINFOHEADER specifies the BMP's color depth(bits per pixel)
+bibitcount
+
+8)Why might fopen return NULL in lines 24 and 32 of copy.c?
+The input file does not exist or the output file was not included in the command line as arguments
+
+9)Why is the third argument to fread always 1 in our code?
+it is the number of elements to be read, which is just one element, of byte number "size"
+
+10)What value does line 65 of copy.c assign to padding if bi.biWidth is 3?
+1
+11) What does fseek do?
+skips over padding, by moving the pointer past padding
+12)What is seek_cur?
+It is the current position of the file pointer
